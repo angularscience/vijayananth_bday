@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+  <meta charset="UTF-8" /> 
+  <title>Vijay Ananth</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="icon" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Share+Tech+Mono" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
+  <script type='text/javascript' src='js/chaffle.min.js'></script>
+  <script type='text/javascript' src='js/typed.js'></script>
+  <meta name="theme-color" content="#23dd64">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-navbutton-color" content="#23dd64">
+  <script>
+    $(document).ready(function() {
+      $('.chaffle').chaffle();
+      $('#particles').particleground({
+        dotColor: '#23dd64',
+        lineColor: '#2f2f2f'
+      });
+      $('.intro').css({
+        'margin-top': -($('.intro').height() / 2)
+      });
+      $('#typed').typed({
+        strings: ['Happy Birthday','Pacha','Gemini Ganesan','PHP Developer :P','Have a blast!!!'],
+        showCursor: true,
+        cursorChar: '_',
+        typeSpeed: 28,
+        backSpeed: 14,
+        shuffle: false,
+        startDelay: 1000,
+        backDelay: 1000, 
+        loop: true,  
+      });
+    });
+  </script>
+</head> 
+
+<body>
+
+<div id="particles">
+  <div class="intro animated fadeInUp">
+    <h1>Vijay Ananth</h1>
+    <p class="type-content"><span id="typed"></span></p>
+    <a href="https://github.com/vijayananth1993" target="main" class="btn">Github</a> 
+    <a href="https://twitter.com/vijayananth1993" target="main" class="btn">Twitter</a>
+    <a href="mailto:vijayananth1993@gmail.com" class="btn">Mail</a>
+  </div>
+</div>
+</body> 
+</html> 
